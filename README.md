@@ -70,3 +70,9 @@ Once that is ready, we can now browse to the address and voila:
 <img width="1384" alt="Screenshot 2025-06-14 at 21 04 13" src="https://github.com/user-attachments/assets/1a29d751-4fb3-4d8f-8061-61cce11e6848" />
 
 Now we need to add users/groups and begin controling access...
+
+To create new users and groups, I followed the following [article](https://computingforgeeks.com/run-openldap-server-in-docker-containers/). Once created it's time to configure KeyCloak. To download KeyCloak we run the following command to set it up in a container:
+
+```
+docker run -p 8080:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=<nice try> quay.io/keycloak/keycloak:26.2.5 start-dev
+```
