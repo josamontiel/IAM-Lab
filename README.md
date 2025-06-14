@@ -76,3 +76,4 @@ To create new users and groups, I followed the following [article](https://compu
 ```
 docker run -p 8080:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=<nice try> quay.io/keycloak/keycloak:26.2.5 start-dev
 ```
+Keycloak is an open-source identity and access management tool that provides single sign-on, user authentication, and authorization for applications. It supports modern protocols like OAuth2, OpenID Connect, and SAML, and allows integration with LDAP, Active Directory, and external identity providers like Google or GitHub.
